@@ -3,6 +3,10 @@ import openai
 import requests
 import json
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Podcast API is live!"})
+
 app = Flask(__name__)
 
 # OpenAI API Key (Replace with yours)
